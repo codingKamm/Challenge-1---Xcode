@@ -90,6 +90,7 @@ enum RandomMotownFact:String, CaseIterable {
     case funFact5 = "MoWest released 10 albums and 40 singles, many of which failed to make it beyond the promo stage?"
     case funFact6 = "Motown's first Asian-American artist was Suzee Ikeda?"
     case funFact7 = "MoWest first release was Tom Clay's 'What the World Needs Now Is Love'?"
+    case funFact8 = "?"
     
     
 //    //Auto-Refresh Attempt
