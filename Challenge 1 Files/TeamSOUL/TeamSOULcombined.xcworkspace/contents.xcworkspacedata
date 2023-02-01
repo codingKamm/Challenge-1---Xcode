@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:../teamSOUL(.draftToo).playground">
+   </FileRef>
+   <Group
+      location = "group:untitled folder"
+      name = "Other Pages">
+      <FileRef
+         location = "group:SampleUIStory.playground">
+      </FileRef>
+   </Group>
+</Workspace>

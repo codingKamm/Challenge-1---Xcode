@@ -1,0 +1,36 @@
+import Foundation
+import SwiftUI
+
+struct UpdaterView: View {
+    var body: some View {
+           TimelineView(.periodic(from: .now, by: 1.0)) { timeline in
+               BeginCounting(now: timeline.date)
+           }
+    }
+}
+
+struct BeginCounting: View {
+    @State var index = 0
+    var now: Date
+    @State var start: Date = Date() // Keep constant everytime
+    var body: some View {
+        VStack {
+            
+            //Relative representation without now
+            Text("\(start.formatted(.relative(presentation: .numeric)))")
+            
+            //Relative representation with now
+            if now > start {
+                Text("\((start..<now).formatted())")
+
+                Text("\((start..<now).formatted(.timeDuration))")
+            }
+            
+            
+            Text("\(start) \n\(now)")
+        }
+        .onChange(of: now) { _ in
+            index += 1
+        }
+    }
+}
